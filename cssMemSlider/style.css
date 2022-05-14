@@ -182,3 +182,47 @@ body {
 #bullet-7:checked ~ .slider .description__container .description__wrapper {
 	margin-left: -600%;
 }
+
+@media screen and (max-width: 850px) {
+	.slider {
+		width: 30em;
+		grid-template-columns: 1fr;
+		grid-template-rows: 7fr 3em 3em;
+	}
+	.slider__container {
+		width: 30em;
+		grid-column: 1 / 2;
+	}
+	.slider__images-item {
+		width: 30em;
+	}
+	.description__container {
+		grid-row: 3/4;
+		grid-column: 1 / 2;
+		text-align: center;
+	}
+	.slider__bullets {
+		grid-row: 2 / 3;
+		grid-column: 1 / 2;
+		grid-column-gap: 0.5em;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.slider__title {
+		font-size: 2.7rem;
+	}
+	.slider {
+		width: 19em;
+	}
+	.slider__container {
+		width: 19em;
+	}
+	.slider__images-item {
+		width: 19em;
+	}
+	.description__item {
+		font-size: 1.2em;
+	}
+}
