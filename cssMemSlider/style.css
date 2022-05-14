@@ -23,6 +23,8 @@ body {
 	margin: 1rem auto 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 7fr 3em;
+	grid-gap: 1.5em 0;
 }
 
 .slider__container {
@@ -48,4 +50,22 @@ body {
 .slider__images-item {
 	border-radius: 1.5em;
 	width: 40em;
+}
+
+.description__container {
+	overflow: hidden;
+	width: 100%;
+	height: 2em;
+	grid-row: 2/4;
+	grid-column: 1 / 2;
+}
+
+.description__wrapper {
+	display: flex;
+	width: 700%;
+}
+
+.description__item {
+	width: 45em;
+	font-size: 1.5em;
 }
