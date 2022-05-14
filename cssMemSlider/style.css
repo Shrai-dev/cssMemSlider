@@ -2,4 +2,50 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Courgette', cursive;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to bottom, #b3e6fa, #4150d8);
+}
+
+.slider__title {
+	padding-top: 2%;
+	font-size: 4rem;
+	text-align: center;
+	color: #fd7120;
+}
+
+.slider {
+	width: 40em;
+	margin: 1rem auto 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.slider__container {
+	overflow: hidden;
+	width: 40em;
+	grid-column: 1 / 3;
+}
+
+.slider__images {
+	display: flex;
+	width: 100%;
+	justify-content: start;
+	align-items: center;
+	transition: 2s;
+}
+
+.slider__images > .slider__images-item {
+	flex-shrink: 0;
+	transform-origin: center center;
+	transition: transform 0.5s;
+}
+
+.slider__images-item {
+	border-radius: 1.5em;
+	width: 40em;
 }
