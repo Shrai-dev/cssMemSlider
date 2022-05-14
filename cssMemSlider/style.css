@@ -55,8 +55,8 @@ body {
 .description__container {
 	overflow: hidden;
 	width: 100%;
-	height: 2em;
-	grid-row: 2/4;
+	/* height: 2em; */
+	grid-row: 2 / 3;
 	grid-column: 1 / 2;
 }
 
@@ -68,10 +68,11 @@ body {
 .description__item {
 	width: 45em;
 	font-size: 1.5em;
+	padding-left: 0.5em;
 }
 
 .slider__bullets {
-	grid-row: 2 / 4;
+	grid-row: 2 / 3;
 	grid-column: 2 / 3;
 	display: flex;
 	grid-column-gap: 0.4em;
@@ -117,4 +118,67 @@ body {
 
 .slider__bullet:active .slider__bullet-btn {
 	background-color: #21f8e6;
+}
+
+#bullet-1:checked ~ .slider .slider__bullets .slider__bullet #btn-1,
+#bullet-2:checked ~ .slider .slider__bullets .slider__bullet #btn-2,
+#bullet-3:checked ~ .slider .slider__bullets .slider__bullet #btn-3,
+#bullet-4:checked ~ .slider .slider__bullets .slider__bullet #btn-4,
+#bullet-5:checked ~ .slider .slider__bullets .slider__bullet #btn-5,
+#bullet-6:checked ~ .slider .slider__bullets .slider__bullet #btn-6,
+#bullet-7:checked ~ .slider .slider__bullets .slider__bullet #btn-7 {
+	background-color: #ffffff;
+}
+
+#bullet-2:checked
+	~ .slider
+	.slider__container
+	.slider__images-wrapper
+	.slider__images,
+#bullet-2:checked ~ .slider .description__container .description__wrapper {
+	margin-left: -100%;
+}
+
+#bullet-3:checked
+	~ .slider
+	.slider__container
+	.slider__images-wrapper
+	.slider__images,
+#bullet-3:checked ~ .slider .description__container .description__wrapper {
+	margin-left: -200%;
+}
+
+#bullet-4:checked
+	~ .slider
+	.slider__container
+	.slider__images-wrapper
+	.slider__images,
+#bullet-4:checked ~ .slider .description__container .description__wrapper {
+	margin-left: -300%;
+}
+#bullet-5:checked
+	~ .slider
+	.slider__container
+	.slider__images-wrapper
+	.slider__images,
+#bullet-5:checked ~ .slider .description__container .description__wrapper {
+	margin-left: -400%;
+}
+
+#bullet-6:checked
+	~ .slider
+	.slider__container
+	.slider__images-wrapper
+	.slider__images,
+#bullet-6:checked ~ .slider .description__container .description__wrapper {
+	margin-left: -500%;
+}
+
+#bullet-7:checked
+	~ .slider
+	.slider__container
+	.slider__images-wrapper
+	.slider__images,
+#bullet-7:checked ~ .slider .description__container .description__wrapper {
+	margin-left: -600%;
 }
