@@ -43,8 +43,6 @@ body {
 
 .slider__images > .slider__images-item {
 	flex-shrink: 0;
-	transform-origin: center center;
-	transition: transform 0.5s;
 }
 
 .slider__images-item {
@@ -55,7 +53,6 @@ body {
 .description__container {
 	overflow: hidden;
 	width: 100%;
-	/* height: 2em; */
 	grid-row: 2 / 3;
 	grid-column: 1 / 2;
 }
@@ -63,6 +60,7 @@ body {
 .description__wrapper {
 	display: flex;
 	width: 700%;
+	transition: 2s;
 }
 
 .description__item {
